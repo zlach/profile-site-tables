@@ -1,0 +1,113 @@
+<!--five things I would like to improve:
+
+	1) I just could not make the button change color on hover!
+	2) in general, I did not feel like I fully understood the button I created. in particular, why did text-decoration only work on the anchor, while the others only worked on the cell itself?
+	3) control spacing a little better. for examle, not sure if my button and social links are perfectly aligned on left... would like slightly smaller gaps between the word "WORK" and the paragraph below it... small space between my image and border line... etc.
+	4) figure out why I can't make the cell that contains my main text any larger using percentages
+	5) in general, there was some stuff I was doing with percentages, which I could get to work, but which I did not fully understand.
+
+-->
+<html>
+	<head>
+		<title>Zachary Goldberg</title>
+	</head>
+	<body style="font-family: 'Montserrat', sans-serif;">
+<!--this will be a table solution-->
+		<table style="border-collapse: collapse;">
+<!--first row simulates the menu bar at top of about.me-->
+			<tr height="50px">
+				<td style="border-bottom: solid #999999 .1px"><a style="font-size: 1.2em; font-weight: 500; color:#000000; text-decoration:none;" target="_blank" href="https://about.me/">about.me</a></td>
+				<td style="border-bottom: solid #999999 .1px">
+					<table width=90% align=right>
+						<tr>
+							<td style="font-weight: 500; text-align:right;">Get Started</td>
+							<td style="text-align:right; font-weight:200;">Features</td>
+							<td style="text-align:right; font-weight:200;">Pricing</td>
+							<td style="text-align:right; font-weight:200;">Log In</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+<!--second row contains image on left and writing on right-->
+			<tr>
+<!--column one is the image-->				
+				<td width="67%" style="vertical-align: top;">
+					<img width="100%" src="zachary-goldberg-graduation.jpg"/>
+				</td>
+<!--column two is the writing-->				
+				<td>
+<!--it has a 3x3 table within it to create the whitespace around the writing-->					
+					<table height="100%" width="100%">
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+<!---this is the middle cell of the 3x3-->							
+							<td width="75%">
+								<div>
+									<h1 style="font-size: 1.3em;">ZACHARY GOLDBERG</h1>
+									<h2 style="font-size: 1em;">Student, Teacher, and Aspiring Software Developer in Austin, Texas</h2>
+								</div>
+<!-- the button -->
+								<a style="text-decoration: none;" href="resume.pdf" target="_blank">
+								<table width="100%" height="45px">
+									<tr>
+										<td style="font-weight: 100; border-radius:5px; color:#ffffff; text-align: center; background-color:#305B90;">
+											Click for resume
+										</td>
+									</tr>
+								</table>
+								</a>
+<!-- end of button -->
+								<div style="font-weight: 200;">
+									<p>
+										Hey there... I've spent a long time in academia, both as a student and as a professor, but lately I've felt the urge to start making things myself. I want to be a software developer so I can start putting my good ideas into practice!
+									</p>
+								<div>
+									<p style="color:#999999; font-size: .9em">WORK</p>ACC, Adjunct Professor of Humanities</p>
+								</div>
+								<div>
+									<p style="color:#999999; font-size: .9em">EDUCATION</p>
+									<p>Inventive Academy, Current<br/>St. John's College, Master's<br/>Harvard College, Bachelor's</p>
+								</div>
+								<table>
+									<tr>
+										<td><img width="40px" src="icon-twitter-gray.png"/></td>
+										<td width=7%></td>
+										<td><img width="40px" src="icon-facebook-gray.png"/></td>
+										<td width=7%></td>
+										<td><a href="https://www.linkedin.com/in/zacharyhartgoldberg/" target="_blank"><img width="40px" src="icon-linkedin-gray.png"/></a></td>
+										<td width=7%></td>
+										<td><img width="40px" src="icon-github-gray.png"/></td>
+									</tr>
+								</table>
+<!-- I abandoned the horizontal
+unordered list because I could 
+not get it to align to the left
+								<div>
+									<ul>
+										<li style="display: inline;"><img width="40px" src="icon-twitter-gray.png"/></li>
+										<li style="display: inline;"><img width="40px" src="icon-facebook-gray.png"/></li>
+										<li style="display: inline;"><a href="https://www.linkedin.com/in/zacharyhartgoldberg/" target="_blank"><img width="40px" src="icon-linkedin-gray.png"/></a></li>
+										<li style="display: inline;"><img width="40px" src="icon-github-gray.png"/></li>
+									</ul>
+								</div>
+end of abandoned code-->
+							</td>
+<!---end of the 3x3 middle cell code-->							
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>	
+	</body>
+</html>
